@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #448844; /* رنگ سبز */
+  background-size: cover;
+  background-repeat: repeat;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.logo {
+  float: left;
+  margin-right: 50px; /* فاصله لوگو از سمت راست */
+}
+
+.logo img {
+  width: 80px; /* ارتفاع و عرض لوگو */
+  height: 80px;
+  border-radius: 50%; /* شکل دایره‌ای برای لوگو */
+}
+
+.menu {
+  float: left;
+  justify-content: center;
+}
+
+.menu a {
+  display: inline-block;
+  color: rgb(211, 233, 85);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: rgb(145, 139, 109);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #459645; /* رنگ سبز برای منوی زیرین */
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(69, 80, 39);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: 50%; /* شکل دایره‌ای برای متن‌ها در منو */
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(166, 173, 135);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+:root {
+  --mobile-width: 325px;
+  --mobile-height: 670px;
+  --mobile-radius: 25px;
+  --separator-height: 500px;
+
+  --bg: #bcd390;
+  --mobile-bg: #6c9b51;
+  --intro-bg: #1a412a;
+  --font-color: #000000;
+
+  --transition: transform 0.7s ease-in-out;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+.info {
+  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 80px;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+.mobile-layout {
+  width: var(--mobile-width);
+  height: var(--mobile-height);
+  margin: 30px 0;
+  border-radius: var(--mobile-radius);
+  perspective: 500px;
+  overflow: hidden;
+  color: var(--font-color);
+  background-color: var(--mobile-bg);
+  box-shadow: 36px 36px 50px 15px #7da34bd1;
+}
+
+.notification-header {
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  z-index: 6;
+}
+
+.actions {
+  position: fixed;
+  top: 37px;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  z-index: 6;
+}
